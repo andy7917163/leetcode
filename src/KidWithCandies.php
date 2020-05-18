@@ -33,6 +33,9 @@ class KidWithCandies
                 $max = $value;
             }
         }
+        /**
+         * 可用max()解，但foreach速度較快
+         */
 
         foreach ($candies as $value1) {
             if ($value1 + $extraCandies >= $max) {
@@ -40,6 +43,11 @@ class KidWithCandies
             } else {
                 $result[] = false;
             }
+            /**
+             * 簡化
+             *
+             * $result[] = ($candy + $extraCandies) >= $max;
+             */
         }
 
         return $result;
