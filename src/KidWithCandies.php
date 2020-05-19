@@ -5,9 +5,9 @@ namespace Src;
 class KidWithCandies
 {
     /**
-     * @param Integer[] $nums
-     * @param Integer $target
-     * @return Integer[]
+     * @param Integer[] $candies
+     * @param Integer $extraCandies
+     * @return Bool[]
      *
      * Constraints:
      * 2 <= candies.length <= 100
